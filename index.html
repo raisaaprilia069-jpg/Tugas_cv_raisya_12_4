@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Raisya Aprilia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2e1065;
+            color: #f5f3ff;
+            overflow-x: hidden;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: twinkle var(--duration) infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+        }
+
+        .profile-img-container::before {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #7c3aed, #db2777);
+            z-index: -1;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .skill-badge {
+            background: rgba(139, 92, 246, 0.2);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body class="py-10 px-4">
+
+    <!-- Star Background -->
+    <div id="star-container"></div>
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Header / Profile Section -->
+        <div class="glass-card p-8 text-center mb-8 relative overflow-hidden">
+            <div class="profile-img-container mb-6">
+                <!-- Placeholder image for user -->
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Raisya" alt="Raisya Aprilia" class="rounded-full w-full h-full object-cover bg-purple-200">
+            </div>
+            <h1 class="text-4xl font-bold mb-2 gradient-text">Raisya Aprilia</h1>
+            <p class="text-purple-300 font-medium mb-4">Fresh Graduate | SMA Karya Pembangunan Baleendah</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <div class="flex items-center gap-2"><i class="fas fa-phone text-pink-400"></i> 085795363415</div>
+                <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-pink-400"></i> Kp Bumi Sari RT 03 RW 11</div>
+                <div class="flex items-center gap-2"><i class="fab fa-instagram text-pink-400"></i> @ryyaraii_</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Sidebar (Left) -->
+            <div class="space-y-8">
+                <!-- Personal Info -->
+                <div class="glass-card p-6">
+                    <h2 class="text-xl font-semibold mb-4 border-b border-purple-500 pb-2">Informasi Pribadi</h2>
+                    <ul class="space-y-3 text-sm">
+                        <li><span class="text-purple-300 block">Tahun Lahir</span> 20 April 2007</li>
+                        <li><span class="text-purple-300 block">Hobby</span> Volly</li>
+                        <li><span class="text-purple-300 block">Bahasa</span> Indonesia, Inggris</li>
+                    </ul>
+                </div>
+
+                <!-- Skills -->
+                <div class="glass-card p-6">
+                    <h2 class="text-xl font-semibold mb-4 border-b border-purple-500 pb-2">Keahlian</h2>
+                    <div class="skill-badge">Memasak</div>
+                    <div class="skill-badge">Pelayanan Pelanggan</div>
+                    <div class="skill-badge">Adaptasi Cepat</div>
+                </div>
+            </div>
+
+            <!-- Main Content (Right) -->
+            <div class="md:col-span-2 space-y-8">
+                <!-- About -->
+                <div class="glass-card p-6">
+                    <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-user-circle text-purple-400"></i> Tentang Saya
+                    </h2>
+                    <p class="text-purple-100 leading-relaxed text-sm text-justify">
+                        Fresh graduate dari SMA KARYA PEMBANGUNAN BALEENDAH yang berorientasi pada pelayanan pelanggan. 
+                        Saya adalah pribadi yang senang mempelajari hal-hal baru dan mampu beradaptasi dengan cepat di lingkungan kerja yang dinamis. 
+                        Berkomitmen untuk memberikan kontribusi positif bagi perusahaan melalui dedikasi dan kemampuan belajar yang tinggi.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="glass-card p-6">
+                    <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-purple-400"></i> Pendidikan
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="relative pl-6 border-l-2 border-purple-500">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-pink-500"></div>
+                            <h3 class="font-bold">SMA KP BALEENDAH</h3>
+                            <p class="text-xs text-purple-300">Lulus Tahun 2026</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-purple-500">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                            <h3 class="font-bold">MTsN 1 BANDUNG</h3>
+                            <p class="text-xs text-purple-300">2021 - 2023</p>
+                        </div>
+                        <div class="relative pl-6 border-l-2 border-purple-500">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
+                            <h3 class="font-bold">SD CIKOPO 1</h3>
+                            <p class="text-xs text-purple-300">2014 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="glass-card p-6">
+                    <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-users text-purple-400"></i> Pengalaman Organisasi
+                    </h2>
+                    <div class="bg-purple-900/30 p-4 rounded-xl border border-purple-500/30">
+                        <h3 class="font-bold text-purple-200">Anggota OSIS SMA KARYA PEMBANGUNAN</h3>
+                        <p class="text-xs text-purple-400 mb-3">Tahun 2024 - 2025</p>
+                        <ul class="list-disc list-inside text-sm text-purple-100 space-y-2">
+                            <li>Menjabat sebagai <span class="text-pink-400 font-semibold">Bendahara</span></li>
+                            <li>Menjadi <span class="text-pink-400 font-semibold">Sekbid Kewirausahaan</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-purple-400 text-xs">
+            <p>&copy; 2026 Raisya Aprilia. Created with Purple Galaxy Theme.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Generate random stars
+        const container = document.getElementById('star-container');
+        const starCount = 100;
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            
+            const size = Math.random() * 3;
+            const posX = Math.random() * 100;
+            const posY = Math.random() * 100;
+            const duration = 2 + Math.random() * 3;
+
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.left = `${posX}vw`;
+            star.style.top = `${posY}vh`;
+            star.style.setProperty('--duration', `${duration}s`);
+            
+            container.appendChild(star);
+        }
+    </script>
+</body>
+</html>
